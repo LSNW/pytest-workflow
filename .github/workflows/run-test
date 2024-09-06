@@ -1,0 +1,15 @@
+name: Tester
+
+on: push
+
+jobs:
+  run-pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run PyTest
+        run: |
+        pip install pytest
+        pytest
