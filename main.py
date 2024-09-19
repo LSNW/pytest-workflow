@@ -1,3 +1,3 @@
 import os
 
-print(os.getenv('SECRET1'))
+print(os.getenv('SECRET1') == 'secval1')
