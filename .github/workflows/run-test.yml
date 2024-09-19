@@ -22,7 +22,5 @@ jobs:
           pytest
       
       - name: Print Statement
-        env:
-          SECRET1: ${{ secrets.SECRET1 }}
         run: python3 main.py
 
