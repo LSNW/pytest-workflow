@@ -5,7 +5,7 @@ on: push
 jobs:
   run-pytest:
     runs-on: ubuntu-latest
-    environment: pushh
+    environment: hdf
 
     steps:
       - name: Checkout code
