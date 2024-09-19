@@ -5,6 +5,8 @@ on: push
 jobs:
   run-pytest:
     runs-on: ubuntu-latest
+    environment: push
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
