@@ -5,7 +5,7 @@ on: push
 jobs:
   run-pytest:
     runs-on: ubuntu-latest
-    environment: hdf
+    environment: env-with-secrets
 
     steps:
       - name: Checkout code
@@ -22,5 +22,7 @@ jobs:
           pytest
       
       - name: Print Statement
+        env:
+          SECRET1: ${{ secrets.SECRET1 }}
         run: python3 main.py
 
